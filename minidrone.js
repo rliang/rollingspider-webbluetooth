@@ -334,4 +334,3 @@ function MiniDrone() {
 
 if (typeof module !== 'undefined')
   module.exports = MiniDrone;
- Á
