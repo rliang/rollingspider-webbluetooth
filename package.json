@@ -1,8 +1,8 @@
 {
   "name": "rollingspider-webbluetooth",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Library for controlling Rolling Spider drones and derivatives from a Web Bluetooth interface.",
-  "main": "index.js",
+  "main": "minidrone.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rliang/rollingspider-webbluetooth.git"

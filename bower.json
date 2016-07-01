@@ -5,7 +5,7 @@
     "rliang <ricardoliang@gmail.com>"
   ],
   "description": "Library for controlling Rolling Spider drones and derivatives from a Web Bluetooth interface.",
-  "main": "index.js",
+  "main": "minidrone.js",
   "keywords": [
     "drone",
     "rollingspider",

@@ -26,12 +26,8 @@
  * A connection with a Mini Drone BLE device, using the Web Bluetooth API.
  *
  * @constructor
- * @param {Bluetooth} bluetooth=navigator.bluetooth the Web Bluetooth
- * interface.
  */
-function MiniDrone(bluetooth) {
-  if (!bluetooth)
-    bluetooth = navigator.bluetooth;
+function MiniDrone() {
 
   var device = null;
   var characteristics = {};
@@ -203,12 +199,14 @@ function MiniDrone(bluetooth) {
   /**
    * Initializes the BLE device and starts the update loop.
    *
-   * @param {BluetoothDevice} dev the device.
+   * @param {Bluetooth} bluetooth=navigator.bluetooth the Web Bluetooth
+   * interface.
    * @see setupDevice
    * @see update
    */
-  function connect() {
-    bluetooth.requestDevice({filters: [
+  function connect(bluetooth) {
+    (bluetooth || navigator.bluetooth)
+    .requestDevice({filters: [
       {namePrefix: 'Mars'},
       {namePrefix: 'RS'},
       {namePrefix: 'Travis'},
@@ -334,5 +332,6 @@ function MiniDrone(bluetooth) {
   this.drive = drive.bind(this);
 }
 
-if (module)
+if (typeof module !== 'undefined')
   module.exports = MiniDrone;
+ Á
