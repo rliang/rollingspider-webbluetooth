@@ -1,0 +1,24 @@
+{
+  "name": "rollingspider-webbluetooth",
+  "homepage": "https://github.com/rliang/rollingspider-webbluetooth",
+  "authors": [
+    "rliang <ricardoliang@gmail.com>"
+  ],
+  "description": "Library for controlling Rolling Spider drones and derivatives from a Web Bluetooth interface.",
+  "main": "index.js",
+  "keywords": [
+    "drone",
+    "rollingspider",
+    "bluetooth",
+    "webbluetooth",
+    "ble"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
